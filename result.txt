@@ -1,0 +1,40 @@
+debug: [m setValue:@"hello" forKey:@"_stringValue"]: 0.000504
+-Os:   [m setValue:@"hello" forKey:@"_stringValue"]: 0.000395
+-O3:   [m setValue:@"hello" forKey:@"_stringValue"]: 0.000374
+----------------------------------------------------------------
+debug: [m setValue:@"hello" forKey:@"stringValue"]:  0.000188
+-Os:   [m setValue:@"hello" forKey:@"stringValue"]:  0.000174
+-O3:   [m setValue:@"hello" forKey:@"stringValue"]:  0.000134
+----------------------------------------------------------------
+debug: [m setStringValue:@"hello"]:                  0.000014
+-Os:   [m setStringValue:@"hello"]:                  0.000032
+-O3:   [m setStringValue:@"hello"]:                  0.000024
+----------------------------------------------------------------
+debug: m->_stringValue = @"hello":                   0.000017
+-Os:   m->_stringValue = @"hello":                   0.000023
+-O3:   m->_stringValue = @"hello":                   0.000014
+----------------------------------------------------------------
+debug: m.stringValue = @"hello":                     0.000014
+-Os:   m.stringValue = @"hello":                     0.000031
+-O3:   m.stringValue = @"hello":                     0.000023
+----------------------------------------------------------------
+debug: [m setValue:n forKey:@"_integerValue"]:       0.000393
+-Os:   [m setValue:n forKey:@"_integerValue"]:       0.000270
+-O3:   [m setValue:n forKey:@"_integerValue"]:       0.000239
+----------------------------------------------------------------
+debug: [m setValue:n forKey:@"integerValue"]:        0.000314
+-Os:   [m setValue:n forKey:@"integerValue"]:        0.000284
+-O3:   [m setValue:n forKey:@"integerValue"]:        0.000306
+----------------------------------------------------------------
+debug: [m setIntegerValue:123]:                      0.000008
+-Os:   [m setIntegerValue:123]:                      0.000005
+-O3:   [m setIntegerValue:123]:                      0.000005
+----------------------------------------------------------------
+debug: m->_integerValue = 123:                       0.000006
+-Os:   m->_integerValue = 123:                       0.000002
+-O3:   m->_integerValue = 123:                       0.000002
+----------------------------------------------------------------
+debug: m.integerValue = 123:                         0.000053
+-Os:   m.integerValue = 123:                         0.000012
+-O3:   m.integerValue = 123:                         0.000005
+----------------------------------------------------------------
